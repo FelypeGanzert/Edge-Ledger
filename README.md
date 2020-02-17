@@ -1,2 +1,2 @@
 # Edge-Ledger
-One page Accounting Consultant website
+One page Accounting Consultant Website (using flexbox).
