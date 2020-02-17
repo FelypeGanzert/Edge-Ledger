@@ -1,0 +1,65 @@
+/* Header */
+#menu{
+    display: none;
+    flex-direction: column;
+    position:  absolute;
+    right: 0;
+    background: #333;
+}
+.hidden{
+    display:none !important;
+}
+.show{
+    display:flex !important;
+}
+header nav ul li{
+    color: white;
+    padding: 15px 5px;
+}
+header{
+    padding: 5px 10px;
+}
+header h1{
+    font-size: 1.3rem;
+}
+header #side-menu button{
+    display: block;
+}
+
+/* What */
+#what .services{
+    display: block;
+}
+#what .services div{
+    flex-direction: row;
+}
+#what .services div i{
+    font-size: 30px;
+}
+
+/* Who */
+#who{
+    display: block;
+}
+#who #employees{
+    display: none
+}
+
+/* Clients */
+#clients .clients {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#clients .clients div{
+    flex-basis: 70px;
+    max-width: 70px;
+}
+
+/* Contact */
+
+#contact{
+   display: block;
+}
+#map{
+    height: 100vh;
+}

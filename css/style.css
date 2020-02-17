@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+/* Global */
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+p{
+    line-height: 1.6rem;
+    margin-bottom: 15px;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+section h3{
+    font-size: 2rem;
+}
+/* Utilites */
+.green {
+    color: #93cb52;
+}
+/* Header */
+header{
+    width: 100%;
+    background: #333;
+    opacity: 0.9;
+    color: white;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+header h1{
+    font-size: 1.4rem;
+}
+header nav ul{
+    display: flex;
+}
+header nav ul li a{
+    color: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+}
+header nav ul li a:hover{
+    background-color: #93cb52;
+}
+header #side-menu button{
+    display: none;
+    font-size: 1.2rem;
+    border: none;
+    background: none;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+}
+#menu{
+    display: flex;
+    position:  static;
+}
+header #side-menu button:hover{
+    background: #93cb52
+}
+
+/* Home */
+#home{
+    height: 100vh;
+    background: url("../img/showcase.jpg") no-repeat center center /cover;
+    background-attachment: fixed;
+    box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.493);
+    color: white;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#home h2{
+    font-size: 4rem;
+    margin-bottom: 25px;
+}
+#home p{
+    font-size: 1.3rem;
+}
+#home a{
+    background: #93cb52;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 10px;
+}
+
+/* What */
+#what{
+    padding: 70px 15px 20px 15px;
+}
+#what h3{
+    text-align: center;
+    margin-bottom: 30px;;
+}
+#what .services{
+    margin: auto;
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+}
+#what .services div {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    margin: 10px;
+}
+#what .services div.description{
+    display: block;
+}
+#what .services div.description h4{
+    margin: 10px 0px;
+}
+#what .services div i{
+    font-size: 50px;
+    background: #93cb52;
+    padding: 20px;
+    border-radius: 50%;
+    margin-right: 25px;
+    color: #333;
+}
+
+/* Who */
+#who{
+    background: #333;
+    display: flex;
+    color: #fff;
+}
+#who div{
+    flex: 1;
+    padding: 70px 25px 30px 25px;
+}
+#who #employees{
+    background: url('../img/people.jpg') no-repeat center center /cover;
+}
+#who h4{
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+#who ul#team li{
+    padding: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px #4b4b4b dotted;
+}
+
+/* Clients */
+#clients{
+    padding: 30px 15px;
+}
+#clients h3{
+    margin-bottom: 25px;
+    text-align: center;
+}
+#clients .clients {
+    display: flex;
+    max-width: 950px;
+    margin: auto;
+}
+#clients .clients div{
+    flex: 1;
+    margin: 30px;
+}
+#clients .clients div img{
+    max-width: 100%;
+}
+
+/* Contact */
+#contact{
+    display: flex;
+}
+
+#contact form {
+    padding: 70px 25px 30px 25px;
+    background: #93cb52;
+    color: white;
+    flex: 1;
+}
+#contact form h3{
+    margin-bottom: 10px;
+}
+#contact form label{
+    display: block;
+    margin: 15px 0px 5px 0px;
+}
+#contact form input{
+    width: 100%;
+    padding: 10px;
+}
+#contact form textarea{
+    width: 100%;
+    height: 60px;
+    padding: 10px;
+}
+#contact form input[type=submit]{
+    margin-top: 15px;
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+}
+#contact #map{
+    flex: 2;
+    background: url('../img/map.jpg') no-repeat center center /cover;
+}
+
+/* Footer */
+footer{
+    background: #333;
+    padding: 30px;
+    color: #fff;
+    text-align: center;
+}
+footer a{
+    color: #fff;
+}
+
+
+
+@media(max-width: 1050px) and (min-width: 751px){
+    #what .services div{
+        flex-direction: column;
+        flex-basis: 100px;
+    }
+}
